@@ -22,6 +22,10 @@ AWS_ACCOUNT_DATA = {
     subnet_id: "subnet-a56297c1",
     security_group: "sg-10cbc576",
   },
+  "sandbox" => {
+    subnet_id: "subnet-b7c527d0",
+    security_group: "sg-9bfa58e2",
+  }
 }.freeze
 AWS_ACCOUNT_VARIABLES = AWS_ACCOUNT_DATA.fetch(AWS_ACCOUNT)
 
