@@ -14,7 +14,7 @@ resources:
   - name: paas-bootstrap
     type: git
     source:
-      uri: https://github.com/alphagov/paas-bootstrap.git
+      uri: https://github.com/keymon/paas-bootstrap.git
       branch: {{branch_name}}
 
   - name: bucket-terraform-state
