@@ -62,6 +62,13 @@ globals:
 
 ## Environments
 
+.PHONY: sandbox
+sandbox: globals check-env-vars ## Set Environment to sandbox
+	$(eval export SYSTEM_DNS_ZONE_NAME=${DEPLOY_ENV}.cf.sandbox.mergermarket.it)
+	$(eval export AWS_ACCOUNT=sandbox)
+	$(eval export ENABLE_DATADOG ?= false)
+	$(eval export CONCOURSE_AUTH_DURATION=48h)
+
 .PHONY: dev
 dev: globals check-env-vars ## Set Environment to DEV
 	$(eval export SYSTEM_DNS_ZONE_NAME=${DEPLOY_ENV}.dev.cloudpipeline.digital)
