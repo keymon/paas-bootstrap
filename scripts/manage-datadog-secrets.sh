@@ -32,7 +32,7 @@ val_from_yaml() {
 
 setup_env() {
   export PASSWORD_STORE_DIR=${DATADOG_PASSWORD_STORE_DIR}
-  secrets_uri="s3://gds-paas-${DEPLOY_ENV}-state/datadog-secrets.yml"
+  secrets_uri="s3://mmg-${DEPLOY_ENV}-state/datadog-secrets.yml"
 }
 
 get_creds_from_env_or_pass() {

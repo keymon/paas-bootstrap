@@ -5,7 +5,7 @@ SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 
 "${SCRIPT_DIR}/fly_sync_and_login.sh"
 
-state_bucket=gds-paas-${DEPLOY_ENV}-state
+state_bucket=mmg-${DEPLOY_ENV}-state
 
 generate_vars_file() {
    cat <<EOF

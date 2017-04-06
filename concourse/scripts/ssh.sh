@@ -5,7 +5,7 @@ TUNNEL=${1:-}
 SOCKET_DIR=~/.ssh
 SOCKET_DEF=%r@%h:%p
 SOCKET=$SOCKET_DIR/$SOCKET_DEF
-state_bucket=gds-paas-${DEPLOY_ENV}-state
+state_bucket=mmg-${DEPLOY_ENV}-state
 
 download_key() {
   key=/tmp/concourse_id_rsa.$RANDOM

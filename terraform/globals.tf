@@ -120,5 +120,5 @@ variable "default_elb_security_policy" {
 
 variable "assets_prefix" {
   description = "Prefix for global assests like S3 buckets"
-  default     = "gds-paas"
+  default     = "mmg"
 }
